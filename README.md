@@ -7,7 +7,7 @@ A deployment script in c++ for a modified deeplab-v3 inception net
 - TensorRT version 10.6.0.26 was used
 
 
-## Examples
+## Performance
 ![image](https://github.com/user-attachments/assets/6157d188-0d8e-4df5-af8b-59f7f07d774c)
 
 | Mode of Deployment  | Avg. Inference Time | Performance |
