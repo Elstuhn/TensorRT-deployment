@@ -203,7 +203,6 @@ int main() {
     const string maskFolder = "data/onsite/masks_inv";
     int width, height, channels;
     const bool int8flag = false;
-    const string precision = "fp16";
     const string enginePath = "deeplab-resnet50.engine";
 
     unsigned char* h_image = stbi_load(imagePath, &width, &height, &channels, 1);
