@@ -5,7 +5,7 @@ A deployment script in c++ for a modified deeplab-v3 inception net (segmentation
 **This script can be used for any onnx or engine file that fulfills the below compatibilities:**
 - Segmentation model (deserialization and conversion from onnx to engine is universal but pre/post processing was made specifically for segmentation)
 - TensorRT v10.6 (code was created with TensorRT v10.6, there may be compatibility issues with certain code if other versions are used e.g EnqueueV3 etc)
-
+<br/><br/>
 ### Pre/post Processing
 **Input**<br/>
 - Input images are **grayscaled then normalized** before being fed into engine, same with masks for comparison to calculate mIOU.
@@ -15,7 +15,7 @@ A deployment script in c++ for a modified deeplab-v3 inception net (segmentation
 **Outputs**<br/>
 - Output masks produced by engine during inference are expected to have same tensor shape as input images with values ranging [0, 1]
 - Output is thresholded with default value 0.5 (can be adjusted to your needs)
-
+<br/><br/>
 ## Performance
 ![image](https://github.com/user-attachments/assets/68987090-d4e4-47b8-8b43-f41160e06cd4)
 <br/>
