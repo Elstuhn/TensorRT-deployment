@@ -11,15 +11,18 @@ A deployment script in c++ for a modified deeplab-v3 inception net (segmentation
 - Input images are **grayscaled then normalized** before being fed into engine, same with masks for comparison to calculate mIOU.
 - If your engine is trained on and expects rgb channels, feel free to modify the code
 <br/>
+
 **Outputs**<br/>
 - Output masks produced by engine during inference are expected to have same tensor shape as input images with values ranging [0, 1]
 - Output is thresholded with default value 0.5 (can be adjusted to your needs)
 
 ## Performance
 ![image](https://github.com/user-attachments/assets/68987090-d4e4-47b8-8b43-f41160e06cd4)
+<br/>
 Example of output after inference on image and mask folders
-
+<br/><br/>
 ![image](https://github.com/user-attachments/assets/6157d188-0d8e-4df5-af8b-59f7f07d774c)
+<br/>
 Example of image comparisons between ground truth and TensorRT(FP32) C++ with reference to original input image
 
 <br/>
