@@ -9,6 +9,7 @@ A deployment script in c++ for a modified deeplab-v3 inception net
 
 ## Performance
 ![image](https://github.com/user-attachments/assets/6157d188-0d8e-4df5-af8b-59f7f07d774c)
+Example of image comparisons between ground truth and TensorRT(FP32) C++ with reference to original input image
 
 | Mode of Deployment  | Avg. Inference Time | Performance |
 | ------------- | ------------- | ------------- |
